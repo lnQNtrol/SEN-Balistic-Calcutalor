@@ -1,0 +1,24 @@
+{
+  "name": "SEN Ballistic Calculator",
+  "short_name": "SEN Calc",
+  "description": "Ballistic calculator for RTI Mora Sniper — SEN LR & BR ammunition",
+  "start_url": "./RTI-SEN-Ballistic-Calculator-V3.1.html",
+  "display": "standalone",
+  "background_color": "#0c0c0c",
+  "theme_color": "#181818",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
