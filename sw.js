@@ -1,17 +1,18 @@
 /* SEN Ballistics service worker.
 
-   STABLE ENTRY: the app installs and launches from index.html, whose identity never changes.
-   index.html redirects to the current versioned build. This is what stops the installed app
-   from getting stuck on an old version.
+   STABLE ENTRY: the app IS index.html (no redirect). The installed PWA launches index.html,
+   whose URL never changes between releases — this is what keeps the install current instead of
+   pinned to an old versioned filename.
 
    STRATEGY:
-   - HTML documents (index.html + the versioned build): NETWORK-FIRST — a fresh deploy is
-     picked up on the next launch when online; falls back to cache when offline.
+   - HTML documents (index.html): NETWORK-FIRST — a fresh deploy is picked up on the next launch
+     when online; falls back to the cached copy when offline.
    - Icons + Google Fonts: cache-first / stale-while-revalidate (rarely change, fine offline).
 
-   RELEASE CHECKLIST (every version): bump CACHE below, and set CURRENT in index.html to the
-   new versioned filename. Nothing else in the PWA kit changes. */
-const CACHE = 'sen-ballistics-v1.12.2';
+   RELEASE CHECKLIST (every version): bump CACHE below in the same commit as the new index.html.
+   Nothing else in the PWA kit changes. Keep a versioned copy of the build for the archive if
+   wanted, but index.html is the canonical app the PWA serves. */
+const CACHE = 'sen-ballistics-v1.12.3';
 const CORE = [
   './',
   './index.html',
