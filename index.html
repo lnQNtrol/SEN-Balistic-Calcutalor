@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0a0c0f">
+<title>SEN Ballistics</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<style>html,body{margin:0;height:100%;background:#0a0c0f;color:#bdbab1;font-family:system-ui,sans-serif}
+.c{display:flex;height:100%;align-items:center;justify-content:center;font-size:14px;letter-spacing:.05em}</style>
+</head>
+<body>
+<div class="c">Loading SEN Ballistics…</div>
+<script>
+/* Stable entry point. The installed app and the service worker both target index.html, which
+   never changes identity between releases — this is what prevents "installs an old version".
+   Only the CURRENT constant below moves each release (one line). It loads over the network
+   when online (so a deploy is picked up immediately) and falls back to the cached build offline. */
+const CURRENT = 'RTI-SEN-Ballistic-Calculator-V1.12.2.html';
+location.replace(CURRENT);
+</script>
+</body>
+</html>
