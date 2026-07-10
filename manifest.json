@@ -2,7 +2,7 @@
   "name": "SEN Ballistics Calculator",
   "short_name": "SEN Ballistics",
   "description": "Field-grade airgun ballistics for the RTI Mora Sniper — trajectory, stability, wind, dope, BC truing, live Calypso wind.",
-  "start_url": "./RTI-SEN-Ballistic-Calculator-V1.12.0.html",
+  "start_url": "./RTI-SEN-Ballistic-Calculator-V1.12.1.html",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",

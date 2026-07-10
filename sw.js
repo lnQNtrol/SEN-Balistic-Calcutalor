@@ -2,8 +2,8 @@
    RELEASE CHECKLIST (every version): bump CACHE below AND update APP_FILE to the new
    versioned filename, in the same commit as the new HTML. Versioned filenames mean the
    SW cache list is release-coupled — forgetting this pins offline users to the old build. */
-const CACHE = 'sen-ballistics-v1.12.0';
-const APP_FILE = './RTI-SEN-Ballistic-Calculator-V1.12.0.html';
+const CACHE = 'sen-ballistics-v1.12.1';
+const APP_FILE = './RTI-SEN-Ballistic-Calculator-V1.12.1.html';
 const PRECACHE = [
   APP_FILE,
   './manifest.json',
