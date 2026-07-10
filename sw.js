@@ -12,13 +12,13 @@
    RELEASE CHECKLIST (every version): bump CACHE below in the same commit as the new index.html.
    Nothing else in the PWA kit changes. Keep a versioned copy of the build for the archive if
    wanted, but index.html is the canonical app the PWA serves. */
-const CACHE = 'sen-ballistics-v1.12.3';
+const CACHE = 'sen-ballistics-v1.12.4';
 const CORE = [
   './',
   './index.html',
   './manifest.json',
-  './icons/icon-192.png',
-  './icons/icon-512.png'
+  './icon-192.png',
+  './icon-512.png'
 ];
 
 self.addEventListener('install', e => {
